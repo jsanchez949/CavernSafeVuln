@@ -1,115 +1,113 @@
-# ✨ Script Ciberseguridad - CavernSafeVuln ✨
+# ✨ Cybersecurity Script - CavernSafeVuln ✨
 
-&#x20;&#x20;
+## 🔒 What is CavernSafeVuln?
 
-## 🔒 ¿Qué es CavernSafeVuln?
+CavernSafeVuln is a set of **cybersecurity tools** designed to **detect vulnerabilities and malware in PHP files** within a Linux system.
 
-CavernSafeVuln es un conjunto de herramientas de **ciberseguridad** diseñado para **detectar vulnerabilidades y malware en archivos PHP** dentro de un sistema Linux.
-
-El usuario puede seleccionar distintas opciones del menú para ejecutar herramientas de seguridad y generar reportes detallados en formato **CSV**.
+The user can select different menu options to execute security tools and generate detailed reports in **CSV** format.
 
 ---
 
-## ⚙️ Características principales
+## ⚙️ Main Features
 
-- **Análisis de seguridad automático** en sistemas Linux.
-- **Detección de malware** en archivos PHP.
-- **Generación de reportes** detallados en archivos CSV.
-- **Fácil instalación** y uso con menú interactivo.
-
----
-
-## 🛠️ Herramientas incluidas
-
-| # | Herramienta                     | Descripción                                           |
-| - | ------------------------------- | ----------------------------------------------------- |
-| 1 | Ver actualizaciones             | Muestra las actualizaciones disponibles del sistema.  |
-| 2 | Actualizar sistema              | Aplica las actualizaciones del sistema.               |
-| 3 | PHP Malware Finder              | Busca malware en archivos PHP.                        |
-| 4 | Generar CSV PHP Malware Finder  | Guarda los resultados del análisis en un archivo CSV. |
-| 5 | Security Advisories             | Busca vulnerabilidades de seguridad en el sistema.    |
-| 6 | Generar CSV Security Advisories | Guarda las vulnerabilidades detectadas en CSV.        |
-| 7 | Ejecutar todas las herramientas | Corre todas las herramientas de análisis.             |
-| 8 | Generar todos los CSV           | Guarda todos los resultados en CSV.                   |
-| 9 | Ejecutar herramientas + CSV     | Combina análisis y generación de reportes.            |
+- **Automated security analysis** for Linux systems.
+- **Malware detection** in PHP files.
+- **Detailed report generation** in CSV files.
+- **Easy installation** and use with an interactive menu.
 
 ---
 
-## 📝 Requisitos
+## 🛠️ Included Tools
 
-- **Sistema operativo:** Kali Linux (o distribución similar)
-- **Lenguaje:** Python 3.9+
-- **Herramientas necesarias:**
+| # | Tool                         | Description                                             |
+| - | ---------------------------- | ------------------------------------------------------- |
+| 1 | Check for updates            | Displays available system updates.                      |
+| 2 | Update system                | Applies system updates.                                |
+| 3 | PHP Malware Finder           | Scans PHP files for malware.                           |
+| 4 | Generate CSV PHP Malware Finder | Saves scan results in a CSV file.                      |
+| 5 | Security Advisories          | Checks for security vulnerabilities in the system.     |
+| 6 | Generate CSV Security Advisories | Saves detected vulnerabilities in a CSV file.          |
+| 7 | Run all tools                | Executes all analysis tools.                           |
+| 8 | Generate all CSVs            | Saves all results in CSV format.                       |
+| 9 | Run tools + CSV              | Combines analysis and report generation.               |
+
+---
+
+## 📝 Requirements
+
+- **Operating System:** Kali Linux (or similar distribution)
+- **Language:** Python 3.9+
+- **Required Tools:**
   - `php-malware-finder`
   - `security-advisories`
   - `yara`
-- **Librerías de Python:**
+- **Python Libraries:**
   - `os`, `re`, `csv`, `pandas`
 
 ---
 
-## 🖥️ Instalación
+## 🖥️ Installation
 
-1. Asegúrate de tener **Python 3.9+** instalado.
-2. Instala **Yara** con:
+1. Ensure you have **Python 3.9+** installed.
+2. Install **Yara** with:
    ```bash
    sudo apt-get update
    sudo apt-get install yara
    ```
-3. Clona este repositorio:
+3. Clone this repository:
    ```bash
-   git clone https://github.com/tu_usuario/CavernSafeVuln.git
+   git clone https://github.com/your_username/CavernSafeVuln.git
    cd CavernSafeVuln
    ```
-4. Crea una carpeta para almacenar los resultados:
+4. Create a folder to store results:
    ```bash
-   mkdir resultados
+   mkdir results
    ```
-5. Ejecuta el script principal:
+5. Run the main script:
    ```bash
    python3 main.py
    ```
 
 ---
 
-## 🔮 Ejemplo de Resultados
+## 🔮 Example Results
 
-Los resultados se almacenan en la carpeta `resultados` y contienen:
+Results are stored in the `results` folder and include:
 
-**Ejemplo CSV de PHP Malware Finder:**
+**Example CSV from PHP Malware Finder:**
 
-| Tipo de Vulnerabilidad | Ocurrencias |
-| ---------------------- | ----------- |
-| nonPrintableChars      | 9           |
-| obfuscatedPhp          | 46          |
-| dodgyPhp               | 20          |
-| dangerousPhp           | 7           |
-| dodgyStrings           | 12          |
+| Vulnerability Type  | Occurrences |
+| ------------------- | ----------- |
+| nonPrintableChars   | 9           |
+| obfuscatedPhp      | 46          |
+| dodgyPhp          | 20          |
+| dangerousPhp      | 7           |
+| dodgyStrings      | 12          |
 
-**Ejemplo CSV de Vulnerabilidades:**
+**Example CSV of Vulnerabilities:**
 
-| CVE            | Nivel de Riesgo |
-| -------------- | --------------- |
-| CVE-2022-25275 | Critical        |
-| CVE-2022-25277 | Critical        |
-| CVE-2022-29248 | High            |
-
----
-
-## 🚀 Contribuciones y Contacto
-
-Si quieres mejorar este proyecto o reportar errores:
-
-- ✨ **Fork** y **pull request** en GitHub
-- 📧 **Email:** [jesus\.s\.s949@gmail.com](mailto\:jesus.s.s949@gmail.com)
+| CVE            | Risk Level |
+| -------------- | ---------- |
+| CVE-2022-25275 | Critical   |
+| CVE-2022-25277 | Critical   |
+| CVE-2022-29248 | High       |
 
 ---
 
-## © Licencia
+## 🚀 Contributions & Contact
 
-Este proyecto está bajo la **Licencia MIT** - eres libre de usarlo, modificarlo y compartirlo.
+If you want to improve this project or report issues:
+
+- ✨ **Fork** and **pull request** on GitHub
+- 💎 **Email:** [jesus.s.s949@gmail.com](mailto:jesus.s.s949@gmail.com)
 
 ---
 
-💡 **¡Proteger tu sistema nunca fue tan fácil!** 🔒🌐
+## © Licence
+
+This project is under the **MIT Licence** – you are free to use, modify, and share it.
+
+---
+
+💡 **Protecting your system has never been easier!** 🔒🌐
 
